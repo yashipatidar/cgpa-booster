@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CGPA Booster</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CGPA Booster</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cgpa-calculator">
+      <h2>CGPA Calculator</h2>
+      <div id="input-grades">
+        <!-- Subject-wise inputs -->
+        <input type="number" placeholder="Subject 1 GPA" class="gpa-input">
+        <input type="number" placeholder="Subject 2 GPA" class="gpa-input">
+        <input type="number" placeholder="Subject 3 GPA" class="gpa-input">
+        <button onclick="calculateCGPA()">Calculate</button>
+      </div>
+      <p id="result"></p>
+    </section>
+
+    <section id="todo">
+      <h2>To-Do List</h2>
+      <input type="text" id="task" placeholder="Add a task" />
+      <button onclick="addTask()">Add</button>
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
